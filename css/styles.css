@@ -1,0 +1,129 @@
+body {
+    color: #262626;
+    font-family: "Inter", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+
+    background-color: #3f5139;
+    background-image: url("../assets/grass_field.jpg");
+    background-size: 525px 1000px;
+    background-blend-mode: lighten;
+}
+
+header, footer {
+    background-color: #F5F5F5;
+    padding: 5%;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    display: none;
+}
+
+h1 {
+    font-family: "Jua", sans-serif;
+    text-transform: uppercase;
+    font-size: 20pt;
+    margin: 5px;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+
+    background-color: #F5F5F5;
+    background-image: linear-gradient(#E9F3D8 0%, #F5F5F5 50%);
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    
+    padding: 12px;
+    margin: 14px;
+}
+
+/* Apply to an overlay over body when initial popup appears to blur elements under */
+.backgroundFilter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(152, 155, 108, 0.4);
+    /* -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); */
+}
+
+/* ////////////////////////////// CREATURES ////////////////////////////// */
+
+.creatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 24px;
+}
+
+.creature1, .creature2, .creature3, .creature4, .creature5, .creature6, .creature7, .creature8 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+}
+
+.creature1 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.creature2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.creature3 {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.creature4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.creature5 {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+.creature6 {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.creature7, .creature8 {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+
+    body {
+        background-size: cover;
+    }
+
+    footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .creature7, .creature8 {
+        display: block;
+    }
+    
+}
