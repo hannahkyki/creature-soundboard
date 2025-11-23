@@ -12,6 +12,41 @@ function playA() {
     setTimeout(resetAudio, 1000, soundA);
 }
 
+function playB() {
+    soundB.play();
+    setTimeout(resetAudio, 1000, soundB);
+}
+
+function playC() {
+    soundC.play();
+    setTimeout(resetAudio, 1000, soundC);
+}
+
+function playD() {
+    soundD.play();
+    setTimeout(resetAudio, 1000, soundD);
+}
+
+function playE() {
+    soundE.play();
+    setTimeout(resetAudio, 1000, soundE);
+}
+
+function playF() {
+    soundF.play();
+    setTimeout(resetAudio, 1000, soundF);
+}
+
+function playG() {
+    soundG.play();
+    setTimeout(resetAudio, 1000, soundG);
+}
+
+function playH() {
+    soundH.play();
+    setTimeout(resetAudio, 1000, soundH);
+}
+
 function resetAudio(audio) {
     audio.pause();
     audio.currentTime = 0;
@@ -20,7 +55,7 @@ function resetAudio(audio) {
 // Code taken & modified from Google with the prompt, "javascript on click l key"
 // Google. (2025, November 18). AI Overview [Generative AI chat]. Gemini 2.0.
 document.addEventListener('keydown', (event) => {
-    if (event.key === 'l' || event.key === 'L') {
+    if (event.key === 'u' || event.key === 'U') {
         // Prevent the default browser action for 'l' if necessary
         // event.preventDefault(); 
 
@@ -28,39 +63,76 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-document.querySelector("#creature1").addEventListener("click", playA());
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'i' || event.key === 'I') {
+        playB();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'o' || event.key === 'O') {
+        playC();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'j' || event.key === 'J') {
+        playD();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'k' || event.key === 'K') {
+        playE();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'l' || event.key === 'L') {
+        playF();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'n' || event.key === 'N') {
+        playG();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'm' || event.key === 'M') {
+        playH();
+    }
+});
+
+document.querySelector("#creature1").addEventListener("click", function() {
+    playA();
+});
 
 document.querySelector("#creature2").addEventListener("click", function() {
-    soundB.play();
-    setTimeout(resetAudio, 1000, soundB);
+    playB();
 });
 
 document.querySelector("#creature3").addEventListener("click", function() {
-    soundC.play();
-    setTimeout(resetAudio, 1000, soundC);
+    playC();
 });
 
 document.querySelector("#creature4").addEventListener("click", function() {
-    soundD.play();
-    setTimeout(resetAudio, 1000, soundD);
+    playD();
 });
 
 document.querySelector("#creature5").addEventListener("click", function() {
-    soundE.play();
-    setTimeout(resetAudio, 1000, soundE);
+    playE();
 });
 
 document.querySelector("#creature6").addEventListener("click", function() {
-    soundF.play();
-    setTimeout(resetAudio, 1000, soundF);
+    playF();
 });
 
 document.querySelector("#creature7").addEventListener("click", function() {
-    soundG.play();
-    setTimeout(resetAudio, 1000, soundG);
+    playG();
 });
 
 document.querySelector("#creature8").addEventListener("click", function() {
-    soundH.play();
-    setTimeout(resetAudio, 1000, soundH);
+    playH();
 });
