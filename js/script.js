@@ -8,7 +8,7 @@ var soundG = new Audio('assets/audio/g_hiphop_melody.mp3');
 var soundH = new Audio('assets/audio/h_calming_melody_loop.mp3');
 
 function playA() {
-    let element = document.querySelector("#creature1");
+    let element = document.querySelector("#creature1Mouth");
     let toggle = document.querySelector("#animToggle");
     
     soundA.play();
@@ -33,7 +33,7 @@ function playA() {
 };
 
 function playB() {
-    let element = document.querySelector("#creature2");
+    let element = document.querySelector("#creature2Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -55,7 +55,7 @@ function playB() {
 };
 
 function playC() {
-    let element = document.querySelector("#creature3");
+    let element = document.querySelector("#creature3Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -77,7 +77,7 @@ function playC() {
 };
 
 function playD() {
-    let element = document.querySelector("#creature4");
+    let element = document.querySelector("#creature4Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -99,7 +99,7 @@ function playD() {
 };
 
 function playE() {
-    let element = document.querySelector("#creature5");
+    let element = document.querySelector("#creature5Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -121,7 +121,7 @@ function playE() {
 };
 
 function playF() {
-    let element = document.querySelector("#creature6");
+    let element = document.querySelector("#creature6Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -143,7 +143,7 @@ function playF() {
 };
 
 function playG() {
-    let element = document.querySelector("#creature7");
+    let element = document.querySelector("#creature7Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound
@@ -165,7 +165,7 @@ function playG() {
 };
 
 function playH() {
-    let element = document.querySelector("#creature8");
+    let element = document.querySelector("#creature8Mouth");
     let toggle = document.querySelector("#animToggle");
     
     // play sound

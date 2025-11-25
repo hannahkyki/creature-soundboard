@@ -21,14 +21,13 @@
     <main>
         <header>
             <h1>Creature Soundboard</h1>
-            <p>Made with &lt;3 by <a href="https://hannahkk.framer.website/" target="_blank">Hannah Kim</a></p>
-            <div class="labeledToggle">
+            <label>
                 Toggle Animations
-                <label class="switch">
+                <div class="switch">
                     <input type="checkbox" id="animToggle">
                     <span class="slider"></span>
-                </label>
-            </div>
+                </div>
+            </label>
             <!-- <button class="rectButton" id="loopToggle">Turn Loop On</button> -->
         </header>
 
@@ -36,14 +35,55 @@
 
         <section class="creatures">
             <!-- <input type="button" value="button" class="creature1" id="creature1"> -->
-            <button class="creature1" id="creature1">U</button>
-            <button class="creature2" id="creature2">I</button>
-            <button class="creature3" id="creature3">O</button>
-            <button class="creature4" id="creature4">J</button>
-            <button class="creature5" id="creature5">K</button>
-            <button class="creature6" id="creature6">L</button>
-            <button class="creature7" id="creature7">N</button>
-            <button class="creature8" id="creature8">M</button>
+
+            <button class="creature1" id="creature1">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature1Mouth"></span>
+                <div class="creatureKey">U</div>
+            </button>
+            <button class="creature2" id="creature2">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature2Mouth"></span>
+                <div class="creatureKey">I</div>
+            </button>
+            <button class="creature3" id="creature3">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature3Mouth"></span>
+                <div class="creatureKey">O</div>
+            </button>
+            <button class="creature4" id="creature4">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature4Mouth"></span>
+                <div class="creatureKey">J</div>
+            </button>
+            <button class="creature5" id="creature5">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature5Mouth"></span>
+                <div class="creatureKey">K</div>
+            </button>
+            <button class="creature6" id="creature6">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature6Mouth"></span>
+                <div class="creatureKey">L</div>
+            </button>
+            <button class="creature7" id="creature7">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature7Mouth"></span>
+                <div class="creatureKey">N</div>
+            </button>
+            <button class="creature8" id="creature8">
+                <span class="eyeL"></span>
+                <span class="eyeR"></span>
+                <span class="mouth" id="creature8Mouth"></span>
+                <div class="creatureKey">M</div>
+            </button>
         </section>
         
         <section class="audioSection">
@@ -58,7 +98,7 @@
         </section>
 
         <footer>
-
+            <p>Made with &lt;3 by <a href="https://hannahkk.framer.website/" target="_blank">Hannah Kim</a></p>
         </footer>
     </main>
     <script src="js/script.js"></script>
