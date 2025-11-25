@@ -1,7 +1,7 @@
 body {
     color: #262626;
     font-family: "Inter", sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 500;
 
     background-color: #3f5139;
@@ -36,7 +36,7 @@ h1 {
 
 .rectButton {
     font-family: "Inter", sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 500;
 
     background-color: #F5F5F5;
@@ -46,6 +46,71 @@ h1 {
     
     padding: 12px;
     margin: 14px;
+}
+
+.labeledToggle {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle (.switch classes) modified from W3Schools,
+https://www.w3schools.com/howto/howto_css_switch.asp on 11 November 2025 */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 12px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The inner slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #399a19;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #399a19;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 /* Apply to an overlay over body when initial popup appears to blur elements under */
@@ -154,6 +219,31 @@ h1 {
     clip-path: shape(from 88.26% 74.47%,curve to 66.86% 92.00% with 80.78% 87.20%,curve to 40.93% 90.02% with 52.94% 96.80%,curve to 21.19% 73.85% with 28.91% 83.24%,curve to 9.55% 51.54% with 13.47% 64.46%,curve to 17.20% 31.48% with 5.62% 38.61%,curve to 38.17% 17.79% with 28.78% 24.34%,curve to 58.08% 15.97% with 47.56% 11.24%,curve to 78.85% 27.61% with 68.60% 20.69%,curve to 92.41% 48.13% with 89.09% 34.52%,curve to 88.26% 74.47% with 95.74% 61.74%);
 }
 
+/* ////////////////////////////// ANIMATIONS ////////////////////////////// */
+
+.creatureAnimation {
+    animation-name: animA;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+.creatureAnimationB {
+    animation-name: animB;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animA {
+    0% {transform: scale(0.95);}
+    10% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+@keyframes animB {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(0);}
+}
+
 @media screen and (min-width: 750px) {
 
     body {
@@ -164,7 +254,7 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 10px 0 10px;
+        padding: 10px;
     }
 
     footer {
@@ -235,4 +325,10 @@ h1 {
         grid-row: 3;
     }
     
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .creatureAnimation {
+        animation-name: animB;
+    }
 }
