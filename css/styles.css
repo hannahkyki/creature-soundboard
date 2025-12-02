@@ -74,6 +74,11 @@ https://www.w3schools.com/howto/howto_css_switch.asp on 11 November 2025 */
     margin-left: 12px;
 }
 
+.switchLabel {
+    display: flex;
+    align-items: center;
+}
+
 .switch:focus-within {
     border: 2px solid red;
 }
